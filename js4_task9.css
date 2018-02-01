@@ -1,0 +1,46 @@
+body {
+	height: -webkit-fill-available;
+	margin: 0;
+}
+#main {
+	height: inherit;
+    display: flex;
+    background-color:#3a3228;
+}
+#window {
+	margin: auto;
+	display: flex;
+	width: 640px;
+	height: 420px;
+}
+#img {
+	display: flex;
+    position: absolute;
+    width: 640px;
+    justify-content: space-between;
+    align-self: center;
+    opacity: 0;
+}
+button {
+	padding: 20px 25px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#back {
+	background-image: url(chevron-pointing-to-the-left.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+#next {
+	background-image: url(right-chevron.png);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+#window:hover #img {
+	opacity: 0.8;
+	transition: opacity 0.3s linear;
+}
